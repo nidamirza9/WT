@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .but {
+            background-color: #095375;
+            border: 2px solid #13b4f3;
+            border-radius: 4px;
+            color: #fff;
+            display: block;
+            font-family: inherit;
+            font-size: 16px;
+            padding: 10px;
+            margin-top: 20px;
+            width: 20%;
+        }
+    </style>
+
+
+</head>
+
+
+<body>
+
+    <p id="demo">Let AJAX change this text.</p>
+
+    <button class="but" type=" button " onclick="loadDoc( 'ajax_info.txt', myFunction) ">Change Content
+</button>
+
+    <script>
+        function loadDoc(url, cfunc) {
+            var xhttp;
+            xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function() {
+                if (xhttp.readyState == 4 && xhttp.status == 200) {
+                    cfunc(xhttp);
+                }
+            };
+            xhttp.open("GET ", url, true);
+            xhttp.send();
+        }
+
+        function myFunction(xhttp) {
+            document.getElementById("demo ").innerHTML = xhttp.responseText;
+        }
+    </script>
+
+</body>
+
+</html>

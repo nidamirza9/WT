@@ -1,0 +1,30 @@
+/* main header section css */
+.main-header
+{
+  /* display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%; */
+
+  display: grid;
+  grid-template-areas: 'mySubmenu mySlider';
+}
+.carousel-inner
+{
+  width: 78%;
+}
+.testimonial-image{
+  width: 100%;
+}
+.testimonial-image1{
+  position: relative;
+  width: 100%;
+}
+.carousel-item
+{
+  width: 100%;
+}
+body
+{
+  background-color: black;
+}

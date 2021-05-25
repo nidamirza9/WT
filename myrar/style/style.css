@@ -1,0 +1,67 @@
+*{
+  padding: 0px;
+  margin: 0px;
+}
+
+/* Header with mbit and cvm , */
+.header_logo_title
+{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 100%;
+  align-items: center;
+}
+.header_logo_title img
+{
+  width: 8rem;
+}
+.title
+{
+  display: inline-block;
+  text-align: center;
+  font-weight: normal;
+  color: #636363;
+  font-family: 'Montserrat', sans-serif;
+}
+.title h1,.title h3
+{
+  line-height: 26px;
+  font-size: 24px;
+  text-transform: capitalize;
+}
+.mainflex
+{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 100%;
+  border: none;
+}
+.card-container
+{
+  margin: 30px auto;
+  width: 300px;
+  border-radius: 40px;
+  box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.22);
+  cursor: pointer;
+  transition: 0.4s;
+  border: none;
+}
+.card-img img
+{
+  width: inherit;
+  height: inherit;
+  border-radius: 40px 40px 0px 0px ;
+  border: none;
+  object-fit: cover;
+}
+.card-container:hover {
+  transform: scale(0.9, 0.9);
+  box-shadow: 5px 5px 30px 15px rgba(0,0,0,0.25), 
+    -5px -5px 30px 15px rgba(0,0,0,0.22);
+}
+.card-body > *
+{
+  font-family: 'Montserrat', sans-serif;
+}

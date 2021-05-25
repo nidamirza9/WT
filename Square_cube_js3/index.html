@@ -1,0 +1,37 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <style>
+        table,
+        tr,
+        td {
+            border: solid black;
+            width: 33%;
+            text-align: center;
+            border-collapse: collapse;
+            background-color: rgb(236, 164, 212);
+            border-radius: 5px;
+            box-shadow: 22px 10px 9px rgba(240, 155, 159, 0.3);
+            overflow: hidden;
+            width: 400px;
+            max-width: 100%;
+        }
+        
+        table {
+            margin: 100px;
+            position: 100px 50px;
+            background-color: gray;
+        }
+    </style>
+    <script>
+        document.write("<table><tr><thcolspan='3'> NUMBERS FROM 0 TO 10 WITH THEIR QUARES AND CUBES </th></tr>");
+        document.write("<tr><td>Number</td><td>Square</td><td>Cube</td></tr>");
+        for (var n = 0; n <= 10; n++) {
+            document.write("<tr><td>" + n + "</td><td>" + n * n + "</td><td>" + n * n * n + "</td></tr>");
+        }
+        document.write("</table>");
+    </script>
+</head>
+
+</html>

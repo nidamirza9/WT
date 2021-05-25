@@ -1,0 +1,30 @@
+body{
+    margin: 0;
+}
+a{
+    text-decoration: none;
+}
+
+.side {
+   padding: 10px; 
+   flex: 4%;
+   display: flex;
+    flex-direction: column;
+}
+.side a{
+    padding: 8px;
+    font-size: 20px;
+    flex-shrink: 2;
+    width: 260px;
+}
+
+.mainmy{
+    flex: 80%;
+    padding: 20px;
+}
+.row{
+    display: flex;
+}
+.containermy{
+    display: flex;
+}

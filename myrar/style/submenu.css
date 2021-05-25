@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;       
+}
+.side{
+    position:inherit;
+    width: 100%;
+    height:auto;
+    border: 1px;
+    background-color: #3bc3fd;
+    border-radius: 10px;
+    margin: 15px 0px 0px 15px;
+    padding: 20px 0;
+}
+h4{
+    color: black;
+    text-transform: uppercase;
+    text-align:justify ;
+    margin-bottom: 30px;
+    margin-top: 10px;
+ 
+}
+.side ul li{
+    padding: 5px;
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+    border-top: 1px solid rgba(255,255,255,0.05);
+}
+.side ul li a{
+   
+   color: white;
+    display: block;
+    
+}
+.side ul li:not:first-child:hover {
+   background-color: white;
+}
+
+
+.side ul li:hover a{
+   
+    color:#000000; 
+    text-decoration: none;
+
+    
+}

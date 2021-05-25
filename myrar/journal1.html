@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        
+        .row::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+        
+        [class*="col-"] {
+            float: left;
+            padding: 10px;
+        }
+        
+        html {
+            font-family: "Lucida Sans", sans-serif;
+        }
+        
+        .header {
+            background-color: lightgray;
+            color: black;
+            padding: 1px;
+        }
+        
+        .menu ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .menu li {
+            padding: 10px;
+            margin-bottom: 15px;
+            background-color: lightgray;
+            color: black;
+            box-shadow: black;
+        }
+        
+        .menu li:hover {
+            background-color: green;
+        }
+        
+        .aside {
+            background-color: lightgray;
+            padding: 15px;
+            color: black;
+            text-align: center;
+            font-size: 14px;
+            box-shadow: black;
+        }
+        
+        .footer {
+            background-color: lightgray;
+            color: black;
+            text-align: center;
+            font-size: 20px;
+            padding: 5px;
+        }
+        
+        [class*="col-"] {
+            width: 100%;
+        }
+        
+        @media only screen and (min-width: 600px) {
+            .col-1-1 {
+                width: 8.33%;
+            }
+            .col-2-2 {
+                width: 16.66%;
+            }
+            .col-3-3 {
+                width: 25%;
+            }
+            .col-4-4 {
+                width: 33.33%;
+            }
+            .col-5-5 {
+                width: 41.66%;
+            }
+            .col-6-6 {
+                width: 50%;
+            }
+            .col-7-7 {
+                width: 58.33%;
+            }
+            .col-8-8 {
+                width: 66.66%;
+            }
+            .col-9-9 {
+                width: 75%;
+            }
+            .col-10-10 {
+                width: 83.33%;
+            }
+            .col-11-11 {
+                width: 91.66%;
+            }
+            .col-12-12 {
+                width: 100%;
+            }
+        }
+        
+        @media only screen and (min-width: 768px) {
+            .col-1 {
+                width: 8.33%;
+            }
+            .col-2 {
+                width: 16.66%;
+            }
+            .col-3 {
+                width: 25%;
+            }
+            .col-4 {
+                width: 33.33%;
+            }
+            .col-5 {
+                width: 41.66%;
+            }
+            .col-6 {
+                width: 50%;
+            }
+            .col-7 {
+                width: 58.33%;
+            }
+            .col-8 {
+                width: 66.66%;
+            }
+            .col-9 {
+                width: 75%;
+            }
+            .col-10 {
+                width: 83.33%;
+            }
+            .col-11 {
+                width: 91.66%;
+            }
+            .col-12 {
+                width: 100%;
+            }
+        }
+        
+        .nav {
+            background-color: white;
+        }
+        
+        .nav a {
+            float: left;
+            display: block;
+            color: black;
+            text-align: center;
+            padding: 5px 20px;
+            font-family: Agency FB;
+            font-size: 22px;
+            text-decoration: none;
+            letter-spacing: 3px;
+        }
+        
+        .nav a:hover {
+            background-color: rgb(237, 237, 237);
+            color: green;
+        }
+        
+        .marquee {
+            background-color: black;
+            font-size: 17px;
+            color: white;
+            letter-spacing: 10px;
+            word-spacing: 15px;
+            margin: auto;
+            padding: 4px;
+        }
+        
+        img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <marquee width=100% height=6% direction="left" scrollamount="18" behavior="scroll" bgcolor="black" class="marquee">
+            <p class="marquee">Important text</p>
+        </marquee>
+    </div>
+    <div class="header">
+        <h1 style="text-align:center;letter-spacing:5px;font-size:35px">MBIT</h1>
+    </div>
+    <div class="nav col-12 col-12-12">
+        <a href="#home">HOME</a>
+        <a href="#about">ABOUT</a>
+        <a href="#menu">LOGIN</a>
+        <a href="#contact">CONTACT</a>
+    </div>
+
+    <div class="row">
+        <div class="col-2 col-2-2 menu">
+            <ul>
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li>5</li>
+                <li>6</li>
+                <li>7</li>
+            </ul>
+        </div>
+        <div class="col-8 col-8-8">
+            <img src="https://www.mbit.edu.in/wp-content/uploads/2020/07/New-College-Building.jpg" width=65%>
+        </div>
+        <div class="row">
+            <div class="col-2 col-2-2 menu">
+                <ul>
+                    <li>
+                        <h1>Heading</h1>
+                        <p>Paragraph</p>
+                        <p>Some text</p>
+                    </li>
+                    <li>
+                        <h1>Heading</h1>
+                        <p>Paragraph</p>
+                        <p>Some text</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <p>Footer</p>
+    </div>
+
+</body>
+
+</html>

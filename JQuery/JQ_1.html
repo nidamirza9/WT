@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .but {
+            background-color: #badfbf;
+            border: 2px solid #44ad78;
+            border-radius: 4px;
+            color: #fff;
+            display: block;
+            font-family: inherit;
+            font-size: 16px;
+            padding: 10px;
+            margin-top: 20px;
+            width: 100%;
+        }
+        
+        p {
+            color: rgb(39, 149, 223)
+        }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+                $("button").click(function() {
+                    $("p").hide();
+                });
+            }
+
+        );
+    </script>
+</head>
+
+<body>
+    <h2>This is a heading</h2>
+    <p>This is a paragraph.</p>
+    <p>This is another paragraph.</p><button class="but">Click me </button></body>
+
+</html>
